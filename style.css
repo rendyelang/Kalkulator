@@ -1,0 +1,116 @@
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 10px;
+  }
+  .history {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 513px) {
+  .button {
+    padding: 40px;
+  }
+  .history {
+    width: 80%;
+  }
+  table {
+    margin: auto;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+.display {
+  background-color: rgb(88, 88, 88);
+  font-size: 2em;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  /* margin-top: 20px; */
+  border-radius: 5px;
+}
+
+.flex-container-column {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-direction: column;
+  text-align: right;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.button {
+  /* padding: 40px; */
+  background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+  border: 1px solid black;
+  flex-basis: 25%;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.button:hover {
+  font-weight: bold;
+}
+
+.equals {
+  flex-basis: 50%;
+}
+
+.ygy {
+  color: rgb(255, 132, 0);
+  font-weight: bold;
+}
+
+.equals:hover,
+.operator:hover,
+.negative:hover {
+  background: rgb(255, 132, 0);
+  color: white;
+  transition: 0.4s;
+}
+
+.history {
+  /* width: 80%; */
+  margin: 30px auto 30px auto;
+  overflow: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+
+th {
+  background-color: orange;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #d2d2d2;
+}
